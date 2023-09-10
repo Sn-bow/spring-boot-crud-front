@@ -3,9 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./signup_form.css" />
     <title>Document</title>
   </head>
   <body>
-    <main class="contain"></main>
+    <main class="contain">
+      <!-- navigation tag start -->
+      <nav class="nav">
+        <div class="move-box">
+          <a href="#" class="move home">HOME</a>
+          <a href="#" class="move what">궁금해요!</a>
+          <a href="#" class="move free-board">자유게시판</a>
+        </div>
+        <!-- th:if="${sec:hasautorized()}" <div>로그아웃</div> -->
+        <div class="login-box">
+          <a class="sign" href="#">로그인</a>
+        </div>
+      </nav>
+      <!-- navigation tag end -->
+
+      <!-- signup_form tag start -->
+      <form class="signup-form-box">
+        <div class="signup-input-wrapper">
+          <div class="box">
+            <label for="id" class="label id-label">아이디</label>
+            <input
+              autofocus
+              type="text"
+              name="id"
+              id="id"
+              class="signup-input id"
+            />
+          </div>
+          <div class="box">
+            <label for="password" class="label pwd-label">비밀번호</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="signup-input id"
+            />
+          </div>
+          <div class="box">
+            <label for="pwd-check" class="label pwd-check-label"
+              >비밀번호 확인</label
+            >
+            <input
+              type="password"
+              name="pwd-check"
+              id="pwd-check"
+              class="signup-input id"
+            />
+          </div>
+          <div class="box">
+            <label for="email" class="label email-label">이메일</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="signup-input id"
+            />
+          </div>
+        </div>
+        <div class="signup-submit-wrapper">
+          <input class="btn signup-btn" type="submit" name="signup" />
+          <a class="btn cancle-btn" href="../signin/signIn_form.html">취소</a>
+        </div>
+      </form>
+      <!-- signup_form tag end -->
+    </main>
   </body>
 </html>
