@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./signIn_form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- layout tag : <main> tag  -->
+    <main class="contain">
+      <!-- navigation tag start -->
+      <nav class="nav">
+        <div class="move-box">
+          <a href="#" class="move home">HOME</a>
+          <a href="#" class="move what">궁금해요!</a>
+          <a href="#" class="move free-board">자유게시판</a>
+        </div>
+        <!-- th:if="${sec:hasautorized()}" <div>로그아웃</div> -->
+        <div class="login-box">
+          <a class="sign" href="#">로그인</a>
+        </div>
+      </nav>
+      <!-- navigation tag end -->
+
+      <!-- signin_form tag start -->
+      <!-- th:object="${signin-form}" th:action="/client/signin" method="post" -->
+      <form class="signin-form-box">
+        <div class="signin-input-wrapper">
+          <!-- th:field="~{id}" | th:field="~{password}" -->
+          <input
+            autofocus
+            class="signin-input id"
+            type="text"
+            name="id"
+            id="id"
+            placeholder="아이디를 입력해주세요"
+          />
+          <input
+            class="signin-input password"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="비밀번호를 입력해주세요"
+          />
+        </div>
+        <div class="signin-submit-wrapper">
+          <input
+            class="signin-submit btn"
+            type="submit"
+            name="login"
+            value="로그인"
+          />
+          <a class="signup-link btn" href="#">회원가입</a>
+        </div>
+      </form>
+      <!-- signin_form tag end -->
+    </main>
+
+    <script src="./signIn_form.js"></script>
+  </body>
+</html>
