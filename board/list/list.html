@@ -24,6 +24,21 @@
 
       <!-- list page start -->
       <div class="list-contain">
+        <form>
+          <select>
+            <option>제목</option>
+            <option>작성자</option>
+          </select>
+          <input class="sch-input" type="text" name="search" id="search" />
+          <input
+            class="sch-btn"
+            type="submit"
+            name="search-confirm"
+            id="search-confirm"
+            value="찾기"
+          />
+        </form>
+
         <table>
           <thead>
             <tr>
@@ -63,6 +78,22 @@
             </tr>
           </tbody>
         </table>
+
+        <div>
+          <a href="#">글 작성하기</a>
+          <span>전체 게시글 수 : 45개</span>
+        </div>
+
+        <!-- pageNation -->
+        <div>
+          <a>이전</a>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <a>다음</a>
+        </div>
       </div>
       <!-- list page end -->
     </main>
