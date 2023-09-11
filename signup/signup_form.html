@@ -17,6 +17,7 @@
         </div>
         <!-- th:if="${sec:hasautorized()}" <div>로그아웃</div> -->
         <div class="login-box">
+          <a class="sign" href="#">MYPAGE</a>
           <a class="sign" href="#">로그인</a>
         </div>
       </nav>
@@ -25,9 +26,13 @@
       <!-- signup_form tag start -->
       <form class="signup-form-box">
         <div class="err">
-          <div class="id-err">아이디를 입력해주세요</div>
-          <div class="pwd-err">비밀번호를 입력해주세요</div>
-          <div class="pwd-check-err">비밀번호가 일치하지 않습니다</div>
+          <div class="id-err errI">아이디를 입력해주세요</div>
+          <div class="pwd-err errI">비밀번호를 입력해주세요</div>
+          <div class="pwd-err2 errI">
+            비밀번호는 대,소문자 특수문자가 포함된 8자 이상이어야 합니다
+          </div>
+          <div class="pwd-check-err errI">비밀번호가 일치하지 않습니다</div>
+          <div class="email-err errI">올바른 이메일 형식을 적어주세요</div>
         </div>
         <div class="signup-input-wrapper">
           <div class="box">
@@ -75,11 +80,17 @@
           </div>
         </div>
         <div class="signup-submit-wrapper">
-          <input class="btn signup-btn" type="submit" name="signup" />
+          <input
+            class="btn signup-btn"
+            type="submit"
+            name="signup"
+            value="확인"
+          />
           <a class="btn cancle-btn" href="../signin/signIn_form.html">취소</a>
         </div>
       </form>
       <!-- signup_form tag end -->
     </main>
+    <script src="./signup_form.js"></script>
   </body>
 </html>
