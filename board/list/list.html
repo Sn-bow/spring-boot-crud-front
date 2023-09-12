@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./list.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- layout tag : <main> tag  -->
+    <main class="contain">
+      <!-- navigation tag start -->
+      <nav class="nav">
+        <div class="move-box">
+          <a href="#" class="move home">HOME</a>
+          <a href="#" class="move free-board">자유게시판</a>
+        </div>
+        <!-- th:if="${sec:hasautorized()}" <div>로그아웃</div> -->
+        <div class="login-box">
+          <a class="sign" href="#">로그인</a>
+        </div>
+      </nav>
+      <!-- navigation tag end -->
+
+      <!-- list page start -->
+      <div class="list-contain">
+        <form>
+          <select>
+            <option>제목</option>
+            <option>작성자</option>
+          </select>
+          <input class="sch-input" type="text" name="search" id="search" />
+          <input
+            class="sch-btn"
+            type="submit"
+            name="search-confirm"
+            id="search-confirm"
+            value="찾기"
+          />
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>등록일자</th>
+              <th>조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>이건 테스트를 위한 제목 입니다.</td>
+              <td>2023-09-11</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>이건 테스트를 위한</td>
+              <td>2023-09-11</td>
+              <td>152</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                이건 테스트를 위한 제목
+                입니다.다ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
+              </td>
+              <td>2023-09-11</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>이</td>
+              <td>2023-09-11</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div>
+          <a href="#">글 작성하기</a>
+          <span>전체 게시글 수 : 45개</span>
+        </div>
+
+        <!-- pageNation -->
+        <div>
+          <a>이전</a>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <a>다음</a>
+        </div>
+      </div>
+      <!-- list page end -->
+    </main>
+  </body>
+</html>
