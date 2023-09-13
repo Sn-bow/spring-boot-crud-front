@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./detail.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- layout tag : <main> tag  -->
+    <main class="contain">
+      <!-- navigation tag start -->
+      <nav class="nav">
+        <div class="move-box">
+          <a href="#" class="move home">HOME</a>
+          <a href="#" class="move free-board">자유게시판</a>
+        </div>
+        <!-- th:if="${sec:hasautorized()}" <div>로그아웃</div> -->
+        <div class="login-box">
+          <a class="sign" href="#">로그인</a>
+        </div>
+      </nav>
+      <!-- navigation tag end -->
+      <!-- detail page start -->
+      <div class="detail-contain">
+        <table class="detail-post-content-box">
+          <tr class="detail-post-tr">
+            <th class="detail-post-th">제목</th>
+            <td class="detail-post-td">제목을 테스트 중입니다</td>
+          </tr>
+
+          <tr class="detail-post-tr">
+            <th class="detail-post-th">작성자</th>
+            <td class="detail-post-td">fdsefes</td>
+          </tr>
+
+          <tr class="detail-post-tr">
+            <th class="detail-post-th detail-regDate-th">등록일자</th>
+            <td
+              class="detail-post-td detail-regDate-td detail-regDate-td-content"
+            >
+              2023-09-13 12:23:52
+            </td>
+            <th class="detail-post-th detail-regDate-th">조회수</th>
+            <td class="detail-post-td detail-regDate-td">13</td>
+          </tr>
+
+          <tr class="detail-post-tr">
+            <th class="detail-post-th">첨부파일</th>
+            <td class="detail-post-td">test.txt, name.xel</td>
+          </tr>
+        </table>
+
+        <div class="detail-post-content">내용 테스트 중입니다.</div>
+
+        <table class="next-prev-post-box">
+          <tr>
+            <th>이전글</th>
+            <td><a href="#">이전글 제목입니다.</a></td>
+          </tr>
+          <tr>
+            <th>다음글</th>
+            <td><a href="#">다음글 제목입니다.</a></td>
+          </tr>
+        </table>
+
+        <!-- comment -->
+        <div class="comment-box">
+          <form class="comment-form-box">
+            <textarea
+              class="comment-textarea"
+              name="comment"
+              id="comment"
+            ></textarea>
+            <input class="comment-confirm-btn" type="submit" value="확인" />
+          </form>
+
+          <table class="comment-table">
+            <tr class="comment-th-box">
+              <th class="comment-writer comment-th">작성자</th>
+              <th class="comment-content comment-th">내용</th>
+              <th class="comment-regDate comment-th">작성일</th>
+            </tr>
+
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <!-- 더미 데이터 -->
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <tr class="comment-tr-box">
+              <td class="comment-writer comment-td">feisl42</td>
+              <td class="comment-content comment-td comment-td-content">
+                <span>글 잘보고 갑니다~~</span>
+                <form>
+                  <input type="submit" value="x" />
+                </form>
+              </td>
+              <td class="comment-regDate comment-td">2023-03-21</td>
+            </tr>
+            <!-- 더미 데이터 -->
+          </table>
+        </div>
+        <!-- comment pageNation start -->
+        <div class="pageNation">
+            <a class="prev-btn page-btn" href="#">이전</a>
+            <ul class="page">
+              <!-- th:each="c, loop : pageCount" -->
+              <!-- loop.index + 1 -->
+              <li class="page-number">
+                <a class="page-number-link" href="#">1</a>
+              </li>
+              <li class="page-number">
+                <a class="page-number-link" href="#">2</a>
+              </li>
+              <li class="page-number">
+                <a class="page-number-link" href="#">3</a>
+              </li>
+            </ul>
+            <a class="next-btn page-btn" href="#">다음</a>
+          </div>
+        </div>
+        <!-- comment pageNation end -->
+      </div>
+      <!-- detail page end -->
+    </main>
+  </body>
+</html>
