@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./board_form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- layout tag : <main> tag  -->
+    <main class="contain">
+      <!-- navigation tag start -->
+      <nav class="nav">
+        <div class="move-box">
+          <a href="#" class="move home">HOME</a>
+          <a href="#" class="move free-board">자유게시판</a>
+        </div>
+        <!-- th:if="${sec:hasautorized()}" <div>로그아웃</div> -->
+        <div class="login-box">
+          <a class="sign" href="#">로그인</a>
+        </div>
+      </nav>
+      <!-- navigation tag end -->
+      <!-- board_form page start -->
+      <form class="board_form_contain">
+        <table class="detail-post-content-box">
+          <tr class="detail-post-tr">
+            <th class="detail-post-th">제목</th>
+            <td class="detail-post-td">
+              <input
+                type="text"
+                class="subject_input_style"
+                placeholder="제목을 작성해주세요"
+              />
+            </td>
+          </tr>
+
+          <tr class="detail-post-tr">
+            <th class="detail-post-th">첨부파일</th>
+            <td class="detail-post-td">
+              <input type="file" />
+            </td>
+          </tr>
+        </table>
+
+        <div class="detail-post-content">
+          <textarea
+            class="content_input_style"
+            placeholder="내용을 작성해주세요"
+          ></textarea>
+        </div>
+        <div class="board_form_confirm_box">
+          <input class="confirm_btn btn" type="submit" value="확인" />
+          <a class="cancle_btn btn" href="#">취소</a>
+        </div>
+      </form>
+      <!-- board_form page end -->
+    </main>
+    <script src="./board_form.js"></script>
+  </body>
+</html>
